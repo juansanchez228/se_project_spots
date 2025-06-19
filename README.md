@@ -19,4 +19,4 @@ the page displays a set of images that can be uploaded/downloaded by everyone, t
 
 Webpage deployed to Github pages
 
-- Link:
+- [Link]: (https://juansanchez228.github.io/se_project_spots/)
