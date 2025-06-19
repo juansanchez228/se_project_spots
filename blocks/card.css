@@ -5,6 +5,9 @@
 .card__title {
   font-weight: 500;
   max-width: 380px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -31,6 +34,11 @@
   left: -5px;
 }
 
+.card__like-button:hover {
+  color: transparent;
+  opacity: 100%;
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     width: 288px;
@@ -48,5 +56,11 @@
     width: 20px;
     height: 18px;
     opacity: 40%;
+    padding-right: 18px;
+  }
+
+  .card__like-button :hover {
+    color: transparent;
+    opacity: 100%;
   }
 }
