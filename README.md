@@ -1,21 +1,22 @@
 # Project 3: Spots
 
-### Overview  
+A page were you can display pictures and share them with other people.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+## Description
+
+the page displays a set of images that can be uploaded/downloaded by everyone, the page features different scales between screen display (1440px - 627px) so people can be able to use it weather be mobile or desktop devices.
+
+## Tech used
+
+- HTML
+- CSS
+  -Responsive Desing
+  -@fonts-face
+  -Command line
+  -Media Queries
+
+## Deployment
+
+Webpage deployed to Github pages
+
+- Link:
