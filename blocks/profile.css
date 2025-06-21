@@ -6,12 +6,12 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
-.new_post__bttncontainer {
+.profile__button-container {
   display: flex;
   flex-grow: 1;
 }
 
-.new_post__bttncontainer {
+.profile__button-container:hover {
   color: transparent;
   opacity: 100%;
 }
@@ -29,7 +29,6 @@
 
 .profile__name {
   max-width: 420px;
-  height: 96px;
   margin: 0 0 12px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -45,7 +44,6 @@
 .profile__text {
   margin: 0;
   max-width: 420px;
-  height: 48px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -56,25 +54,26 @@
   -webkit-box-orient: vertical;
 }
 
-.edit_profile__button {
+.profile__edit-button {
   width: 107.34px;
-  opacity: 0.7;
   color: #212121;
   background-color: transparent;
   border: none;
   margin-top: auto;
   height: 16px;
   opacity: 70%;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.edit_profile__button :hover {
+.profile__edit-button :hover {
   color: transparent;
   opacity: 100%;
 }
 
-.new_post__button {
+.profile__new-post-button {
   background-color: #212121;
-  width: 157px;
   height: 52px;
   gap: 8px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -107,34 +106,27 @@
     font-size: 20px;
     margin: 0 0 6px;
     max-width: 288px;
-    height: 60px;
   }
 
   .profile__text {
     margin: 0 0 32px;
     max-width: 288px;
-    height: 48px;
   }
   .profile__column {
     margin: 0 0 20px;
     align-items: center;
   }
 
-  .edit_profile__button:hover {
+  .profile__edit-button:hover {
     color: transparent;
     opacity: 100%;
   }
 
-  .new_post__button {
+  .profile__new-post-button {
     width: 100%;
   }
 
-  .new_post__bttncontainer {
+  .profile__button-container {
     width: 100%;
-  }
-
-  .new_post__bttncontainer :hover {
-    color: transparent;
-    opacity: 100%;
   }
 }
