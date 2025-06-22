@@ -20,3 +20,7 @@ the page displays a set of images that can be uploaded/downloaded by everyone, t
 Webpage deployed to Github pages
 
 - [Link]: (https://juansanchez228.github.io/se_project_spots/)
+
+## Project Video link
+
+- [link]: (https://drive.google.com/file/d/1iHHq6xIvWNMgf0Ra8fv_cJHeSaO39oOi/view?usp=sharing)
