@@ -3,7 +3,6 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-bottom: 60px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -11,6 +10,7 @@
 }
 
 .footer__copyright {
+  margin: 0;
   color: #212121;
   opacity: 70%;
 }
