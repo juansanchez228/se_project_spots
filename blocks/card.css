@@ -31,6 +31,7 @@
 
 .card__like-button {
   background-color: transparent;
+  cursor: pointer;
   height: 20px;
   width: 23px;
   border: none;

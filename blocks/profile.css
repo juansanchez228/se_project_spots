@@ -79,6 +79,7 @@
 .profile__new-post-button {
   background-color: #212121;
   cursor: pointer;
+  width: 157px;
   height: 52px;
   gap: 8px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -88,7 +89,7 @@
   color: #fcf5e5;
   margin-top: auto;
   border-radius: 8px;
-  padding: 18px 32px;
+  padding: 18px 28px;
   margin-left: auto;
   border: none;
 }
