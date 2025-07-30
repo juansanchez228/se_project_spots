@@ -37,13 +37,12 @@
   font-size: 32px;
   line-height: 1;
   display: -webkit-box;
-  overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
-.profile__text {
+.profile__description {
   margin: 0;
   max-width: 420px;
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -52,7 +51,6 @@
   opacity: 70%;
   line-height: 1;
   display: -webkit-box;
-  overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -120,7 +118,7 @@
     max-width: 288px;
   }
 
-  .profile__text {
+  .profile__description {
     margin: 0 0 32px;
     max-width: 288px;
   }
