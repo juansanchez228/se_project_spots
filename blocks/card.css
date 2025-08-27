@@ -51,6 +51,10 @@
   border-radius: 8px;
 }
 
+.card__image:hover {
+  cursor: pointer;
+}
+
 .card__like-button {
   background-image: url(../images/like-button.svg);
   background-color: transparent;

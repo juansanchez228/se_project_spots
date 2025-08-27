@@ -87,14 +87,12 @@ function getCardElement(data) {
     openModal(previewModal);
   });
 
-  previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
-  console.log(document.querySelector("#preview-modal"));
-
   return cardElement;
 }
+
+previewModalCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
@@ -143,6 +141,10 @@ function handleNewPostProfileSubmit(evt) {
   cardsList.prepend(cardElement);
 
   closeModal(newPostModal);
+  function closeNewPostModal() {
+    closeModal(newPostModal);
+    newPostProfileForm.reset();
+  }
 }
 
 newPostProfileForm.addEventListener("submit", handleNewPostProfileSubmit);
