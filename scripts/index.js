@@ -141,10 +141,7 @@ function handleNewPostProfileSubmit(evt) {
   cardsList.prepend(cardElement);
 
   closeModal(newPostModal);
-  function closeNewPostModal() {
-    closeModal(newPostModal);
-    newPostProfileForm.reset();
-  }
+  newPostProfileForm.reset();
 }
 
 newPostProfileForm.addEventListener("submit", handleNewPostProfileSubmit);
