@@ -1,10 +1,3 @@
-import {
-  enableValidation,
-  resetValidation,
-  disableButton,
-  settings,
-} from "./validation";
-
 const initialCards = [
   {
     name: "Golden Gate Bridge",

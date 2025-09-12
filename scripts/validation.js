@@ -76,5 +76,3 @@ const enableValidation = (settings) => {
 };
 
 enableValidation(settings);
-
-export { settings, enableValidation, resetInputErrors };
