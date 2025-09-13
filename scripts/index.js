@@ -83,24 +83,42 @@ function getCardElement(data) {
     previewImageEl.src = data.link;
     previewImageEl.alt = data.name;
     previewCaptionEl.textContent = data.name;
-
     openModal(previewModal);
   });
 
   return cardElement;
 }
 
-previewModalCloseBtn.addEventListener("click", () => {
-  closeModal(previewModal);
-});
-
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscKey);
+  modal.addEventListener("mousedown", handleOverlayClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscKey);
+  modal.removeEventListener("mousedown", handleOverlayClick);
 }
+
+function handleEscKey(e) {
+  if (e.key === "Escape") {
+    const openedModal = document.querySelector(".modal.modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
+function handleOverlayClick(e) {
+  if (e.target.classList.contains("modal")) {
+    closeModal(e.target);
+  }
+}
+
+previewModalCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -118,6 +136,12 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 newPostBtn.addEventListener("click", function () {
+  newPostProfileForm.reset();
+  resetValidation(
+    newPostProfileForm,
+    [newPostImageInput, newPostCaptionInput],
+    settings
+  );
   openModal(newPostModal);
 });
 
@@ -136,15 +160,16 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleNewPostProfileSubmit(evt) {
   evt.preventDefault();
-
   const inputValues = {
     name: newPostCaptionInput.value,
     link: newPostImageInput.value,
   };
   const cardElement = getCardElement(inputValues);
-
   cardsList.prepend(cardElement);
-  disabledButton(cardSubmitBtn, settings);
+  disabledButton(
+    newPostProfileForm.querySelector(".modal__submit-btn"),
+    settings
+  );
   closeModal(newPostModal);
   newPostProfileForm.reset();
 }

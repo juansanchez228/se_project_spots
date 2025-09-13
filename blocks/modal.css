@@ -26,13 +26,14 @@
 }
 
 .modal__container {
-  max-height: 408px;
+  max-height: 408px; /* use just height makes the modal a bit bigger i think i will end up changing the dims values*/
   max-width: 730px;
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+  /*box-sizing: border-box; i can't used it, it pushes the button outside the modal*/
 }
 
 .modal__close-btn {
@@ -139,6 +140,12 @@
   opacity: 40%;
 }
 
+.modal__button_disabled {
+  opacity: 100%;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .modal__image-container {
   position: relative;
 }
@@ -181,8 +188,7 @@
   }
 
   .modal__container {
-    width: 300px;
-    height: 336px;
+    max-width: 300px;
     top: 134px;
     padding: 12px;
   }
