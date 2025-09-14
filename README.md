@@ -1,6 +1,6 @@
 # Project 3: Spots
 
-A page were you can display pictures and share them with other people.
+A page where you can display pictures and share them with other people.
 
 ## Description
 
