@@ -57,7 +57,7 @@
 }
 
 .card__like-button {
-  background-image: url(../images/like-button.svg) center/contain no-repeat;
+  background: url(../images/like-button.svg) center/contain no-repeat;
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
